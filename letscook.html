@@ -1,338 +1,365 @@
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Let's Cook!</title>
+        <link href="img/favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
 
-<head>
-      <meta charset="utf-8">
-      <title>Let's Cook!</title>
-      <link href="img/favicon.ico" rel="shortcut icon">
-      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <body>
+        <header>
+            <div>
+                <img src="img/logo.png" alt="Grace Chai" />
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-<body>
-<header>
-    <div>
-          <source srcset="img/logo.png" media="(max-width:767px)">
-          <img src="img/logo.png" alt="Grace Chai">
-          <nav>
-          <ul>
-                <li><a href="index.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-          </ul>
-          </nav>
-    </div>
-</header>
-
-  <div>
-    <div>
-      <main>
         <div>
-          <div>
-            <picture>
-              <img src="img/lets cook/lets_cook-coverimage@2x.jpg" alt="Let's Cook! Cover Image">
-            </picture>
             <div>
+                <main>
+                    <div>
+                        <div>
+                            <picture>
+                                <img src="img/letscook/lets_cook-coverimage@2x.jpg" alt="Let's Cook! Cover Image" />
+                            </picture>
+                            <div>
+                                <div>
+                                    <h2>Overview</h2>
+                                    <p>
+                                        Let's Cook! is an all-in-one app that gives users access to top recipes and nutritionists with the click of a button. With Let's Cook!, users can also plan their meals head of time sand save some
+                                        trips to the grocery store.
+                                    </p>
+                                    <picture>
+                                        <img src="img/letscook/lets_cook-onboardingmockups@2x.jpg" alt="Onboarding Screens" />
+                                    </picture>
+
+                                    <h2>Problem</h2>
+                                    <p>
+                                        Oftentimes, people choose to cook because it's more cost effective, they have control over what ingredients go into their food, or they might be on a specific diet. However, people are also often
+                                        busy, always on-the-go, and don't always know what food to include in their diet, so cooking can become a tedious task. Is there a quicker way to explore and organize recipes all in one place? What
+                                        can help them save some time? Who can guide them in making the right food choices?
+                                    </p>
+
+                                    <h2>Goal</h2>
+                                    <p>
+                                        Develop a cooking app that enables users to easily search for recipes, connect with nutritionists to learn more about food choices that promote a healthy lifestyle, create and manage meal plans, and
+                                        add ingredients to their shopping list for a seamless grocery shopping experience.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h1>Discover</h1>
+                                </div>
+                                <div>
+                                    <h2>Competitive Analysis</h2>
+                                    <p>
+                                        To understand where Let's Cook! stands in the market and identify the strengths and weaknesses of my competition, I performed a Competitive analysis of three apps: Tasty, AllRecipes, and Yummly.
+                                    </p>
+                                    <picture>
+                                        <img src="img/letscook/lets_cook-competitiveanalysisresults@2x.jpg" alt="Competitive Anaylsis Results" />
+                                    </picture>
+
+                                    <h2>Survey</h2>
+                                    <p>
+                                        Next, a survey was conducted to identify users' needs and their general attitudes about cooking. Then, I documented on users' opinions on cooking apps, determined what apps or sites they enjoy using
+                                        and what leaves them frustrated, and learned about the types of tasks users perform and in what context. <br />
+                                        <br />
+                                        Key Findings:
+                                        <br />
+                                        <br />
+                                    </p>
+
+                                    <ul>
+                                        <li>62.5% of participants cooks at least twice a week.</li>
+                                        <li>Participants cook to save time and money, eat healthier, and because they enjoy cooking.</li>
+                                        <li>81.3% of participants cook for themselves and others, taking ~20-40 minutes to cook a meal.</li>
+                                        <li>Most participants use apps and websites to search for recipes, and they are able to find them in 30 minutes</li>
+                                        <li>81.3% of particpants save recipes they found. They generally choose recipes that require minimal ingredients and quick to prepare.</li>
+                                    </ul>
+                                    <picture>
+                                        <img src="img/letscook/lets_cook-surveyinfo@2x.png" alt="Survey Info" />
+                                    </picture>
+
+                                    <h2>Interviews</h2>
+                                    <p>
+                                        After conducting a survey, I recruited 3 participants to take part in user interviews. Each interview was done over Zoom and took no longer than 30 minutes. All questions were open-ended and they were
+                                        aimed at elicting information tied directly to my defined goals.
+                                        <br />
+                                        <br />
+                                        Key Findings:
+                                    </p>
+                                    <p></p>
+                                    <ul>
+                                        <li>All interviewees found cooking to be a chore and preferred if it required minimal effort.</li>
+                                        <li>Even though interviewees cook everyday, they don't necessarly enjoy it.</li>
+                                        <li>Interviewees want a good system to save recipes.</li>
+                                        <li>Recipes that include ingredient substitutions would be useful.</li>
+                                        <li>Having a feature that readjusts the required ingredients based on the inputted serving size will be helpful.</li>
+                                        <li>Access to nutritionists would be helpful when they have questions about selecting the right food to promote a healthy lifestyle.</li>
+                                    </ul>
+
+                                    <picture>
+                                        <img src="img/letscook/lets_cook-interviewinfo@2x.jpg" alt="Interview Info" />
+                                    </picture>
+
+                                    <h2>Personas</h2>
+                                    <picture>
+                                        <img src="img/letscook/lets_cook-persona@2x.jpg" alt="Personas" />
+                                    </picture>
+                                </div>
+
+                                <div>
+                                    <h1>Ideation</h1>
+                                </div>
+                                <div>
+                                    <h2>User Journey</h2>
+                                    <p>
+                                        To understand exactly what users want to accomplish and how they carry out a set of tasks, I created a mental model. I looked at one of my personas, James, and determined what types of motivation
+                                        might be driving his behavior. Then, I went on to create a user journey map and user flow to visualize how James will interact with the app.
+                                    </p>
+                                    <picture>
+                                        <img src="img/letscook/lets_cook-journeymap@2x.jpg" alt="User Journey" />
+                                    </picture>
+
+                                    <h2>Sitemap</h2>
+                                    <p>
+                                        With user journey and user flow, I was able to determine my app screens and design a sitemap. To better design the information architecture of Let's Cook!, I conducted a closed card sorting test using
+                                        Optimal Workshop, where 7 participants completed the study.
+                                    </p>
+                                    <picture>
+                                        <img src="img/letscook/lets_cook-sitemap@2x.jpg" alt="Sitemap" />
+                                    </picture>
+
+                                    <h2>Sketches</h2>
+                                    <p>
+                                        Next, I designed low-fidelity wireframes to help me flesh out interaction ideas. These screens were chosen to illustrate the navigational components of my app and get an overall idea of how my design
+                                        will be laid out.
+                                        <br />
+                                        <br />
+                                        This process was quick to create and easy to modify, and it allowed more room for creativity without having to worry about the small details.
+                                    </p>
+                                    <picture>
+                                        <img src="img/letscook/lets_cook-sketches@2x.jpg" alt="Sketches" />
+                                    </picture>
+
+                                    <h2>Mid-Fidelity</h2>
+                                    <p>
+                                        Once I had the general concept down on paper, I was able to translate my sketches into mid-fidelity wireframes to convey form, function, and specific UI. These wireframes were created using Adobe XD.
+                                    </p>
+                                    <picture>
+                                        <img src="img/letscook/lets_cook-midfidelity@2x.jpg" alt="Mid-Fidelity Wireframes" />
+                                    </picture>
+                                </div>
+
+                                <div>
+                                    <h1>Design</h1>
+                                </div>
+                                <div>
+                                    <h2>Prototype</h2>
+                                    <iframe
+                                        style="border: 1px solid rgba(0, 0, 0, 0.1);"
+                                        width="800"
+                                        height="450"
+                                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FJQKjw5jKV3yGA28MU7FVyl%2FLet-s-Cook%3Fpage-id%3D0%253A1%26node-id%3D12%253A437%26viewport%3D119%252C-55%252C0.08858361095190048%26scaling%3Dscale-down"
+                                        allowfullscreen
+                                    ></iframe>
+
+                                    <h2>Search for Recipe</h2>
+                                    <p>
+                                        To create a seamless experience for users to explore recipes, I designed each screen to have a search bar so users can easily and quickly do searches no matter what screen they are on. A filter
+                                        function is also available to help users refine their searches.
+                                    </p>
+
+                                    <h2>Search for Experts</h2>
+                                    <p>
+                                        One of the primary features of Let's Cook! is the ability for users to connect with experts, like nutritionists, dieticians, chefs, to talk about lifestyle changes - what to eat or not to eat when on
+                                        a certain diet, what nutrients are important to include, etc. Users can message these experts with their questions, or for more extensive and consistent guidance, they are ablet o book video/audio
+                                        calls with their experts.
+                                    </p>
+
+                                    <h2>Create Meal Plans</h2>
+                                    <p>
+                                        A lot of times, users have busy schedules and don't always have time to figure out what to cook or how longi t would take to prepare meals. I wanted to give them the ability to create meal plans so
+                                        that they can plan ahead of time what they will be cooking, what ingredients they need, and how long it would take them to prepare the meals. Additionally, it also enables those who want to improve
+                                        their health and those who want to meet their weight goals to stick to well-balanced meals and take control of their nutritional needs.
+                                    </p>
+
+                                    <h2>Add Ingredients to Shopping List</h2>
+                                    <p>
+                                        "What ingredients do I need again." "Did I buy this yet?" "Where can I buy these ingredients?" These are questions users no longer have to ask as they are now able to add all the ingredients on the
+                                        recipe onto their shopping list and be linked to specific stores where they can buy those ingredients when they are ready to order them.
+                                    </p>
+
+                                    <h2>Typography</h2>
+                                    <p>
+                                        Let's Cook! uses three typefaces - Baumans, Be Vietnam, and Roboto. However, Be Vietnam is the primary typography of teh app. Baumans was used for the logo to keep it fun and inviting, and Roboto was
+                                        used for button texts.
+                                    </p>
+                                    <picture>
+                                        <img src="img/letscook/lets_cook-typography@2x.jpg" alt="Typography" />
+                                    </picture>
+
+                                    <h2>Colors</h2>
+                                    <p>
+                                        The two main colors for this app are white and orange-red. A white background was used to allow the orange-red to pop. The primary text color is black. When a text is clickable or selected, its color
+                                        will be orange-red. Accent colors were used for illustrations on the onboarding screens. Orange was used because of its association with joy, happiness, and hunger.
+                                    </p>
+                                    <picture>
+                                        <img src="img/letscook/lets_cook-colors@2x.jpg" alt="Colors" />
+                                    </picture>
+
+                                    <h2>Accessibility</h2>
+                                    <p>
+                                        Let's Cook! will adhere to standard guidelines for accessibility.
+                                    </p>
+                                    <ul>
+                                        <li>Careful color selection and high contrast to improve visibility</li>
+                                        <li>Offer transcriptions for audio resources and captions/subtitles for videos</li>
+                                        <li>Use simpler language for contents so all users can easily understand</li>
+                                        <li>Highlight or emphasize important information using different font weight and sizes</li>
+                                        <li>Keep navigational elements in the same order on each screen</li>
+                                    </ul>
+                                    <iframe
+                                        style="border: 1px solid rgba(0, 0, 0, 0.1);"
+                                        width="800"
+                                        height="450"
+                                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FJQKjw5jKV3yGA28MU7FVyl%2FLet-s-Cook%3Fpage-id%3D0%253A1%26node-id%3D12%253A437%26viewport%3D119%252C-55%252C0.08858361095190048%26scaling%3Dscale-down"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+
+                                <div>
+                                    <h2>Takeaways</h2>
+                                    <p>
+                                        As a person who often looks for new ways to improve my diet and loves cooking, workong on Let's Cook! was really eye-opening and fun. I discovered the importance of having access to nutritionists and
+                                        the convenience of linking specific store to the app for ingredients purchase. I also had the opportunity to explore more features on Figma that allowed me to create and improve my design process for
+                                        Let's Cook! In the future, I would want to conduct surveys and interviews with a more diverse pool of people to gather a wider range of experiences and perspectives.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <!-- For Contact Me section -->
                 <div>
-                      <h2>Overview</h2>
-                      <p>
-                          Let's Cook! is an all-in-one app that gives users access to top recipes and nutritionists with the click of a button.
-                          With Let's Cook!, users can also plan their meals head of time sand save some trips to the grocery store.
-                      </p>
-                      <picture>
-                        <img src="img/lets cook/lets_cook-onboardingmockups@2x.jpg" alt="Onboarding Screens">
-                      </picture>
+                    <footer id="contact">
+                        <h2>Get in Touch</h2>
+                        <p>Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:7326379586">(732) 637-9586</a> or Skype me at <a href="skype:grcchai">grcchai</a>. Prefer sending an email?</p>
+                        <div>
+                            <a href="mailto:grace.chai@gmail.com" class="button contact">Email Me</a>
+                        </div>
+                        <div>
+                            <a href="LINKEDIN-URL" target="_blank">
+                                <svg
+                                    height="100%"
+                                    style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;"
+                                    version="1.1"
+                                    viewBox="0 0 512 512"
+                                    width="100%"
+                                    xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                >
+                                    <g id="g5891">
+                                        <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill: #2867b2;" />
+                                        <g id="shapes">
+                                            <rect height="257.962" id="rect11" style="fill: #fff;" width="85.76" x="61.053" y="178.667" />
+                                            <path
+                                                d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z"
+                                                id="path13-0"
+                                                style="fill: #fff; fill-rule: nonzero;"
+                                            />
+                                            <path
+                                                d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
+                                                id="path15"
+                                                style="fill: #fff; fill-rule: nonzero;"
+                                            />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
 
-                      <h2>Problem</h2>
-                      <p>
-                          Oftentimes, people choose to cook because it's more cost effective, they have control over what ingredients go into their
-                          food, or they might be on a specific diet. However, people are also often busy, always on-the-go, and don't always know
-                          what food to include in their diet, so cooking can become a tedious task. Is there a quicker way to explore and organize
-                          recipes all in one place? What can help them save some time? Who can guide them in making the right food choices?
-                      </p>
-
-                      <h2>Goal</h2>
-                      <p>
-                          Develop a cooking app that enables users to easily search for recipes, connect with nutritionists to learn more about food
-                          choices that promote a healthy lifestyle, create and manage meal plans, and add ingredients to their shopping list for a seamless
-                          grocery shopping experience.
-                      </p>
-                </div>
-
-                <div>
-                      <h1>Discover</h1>
-                </div>
-                <div>
-                      <h2>Competitive Analysis</h2>
-                      <p>
-                          To understand where Let's Cook! stands in the market and identify the strengths and weaknesses of my competition, I performed a Competitive
-                          analysis of three apps: Tasty, AllRecipes, and Yummly.
-                      </p>
-                      <picture>
-                        <img src="img/lets cook/lets_cook-competitiveanalysisresults@2x.jpg" alt="Competitive Anaylsis Results">
-                      </picture>
-
-                      <h2>Survey</h2>
-                      <p>
-                          Next, a survey was conducted to identify users' needs and their general attitudes about cooking. Then, I documented on users' opinions on cooking
-                          apps, determined what apps or sites they enjoy using and what leaves them frustrated, and learned about the types of tasks users perform and in
-                          what context.
-                          <br><br>
-                          Key Findings:
-                      </p>
-                      <p>
-                      <ul>
-                            <li>62.5% of participants cooks at least twice a week.</li>
-                            <li>Participants cook to save time and money, eat healthier, and because they enjoy cooking.<li>
-                            <li>81.3% of participants cook for themselves and others, taking ~20-40 minutes to cook a meal.</li>
-                            <li>Most participants use apps and websites to search for recipes, and they are able to find them in < 30 minutes</li>
-                            <li>81.3% of particpants save recipes they found. They generally choose recipes that require minimal ingredients and quick to prepare.</li>
-                      </ul>
-                      </p>
-                      <picture>
-                        <img src="img/lets cook/lets_cook-surveyinfo@2x.png" alt="Survey Info">
-                      </picture>
-
-                      <h2>Interviews</h2>
-                      <p>
-                          After conducting a survey, I recruited 3 participants to take part in user interviews. Each interview was done over Zoom and took no longer than
-                          30 minutes. All questions were open-ended and they were aimed at elicting information tied directly to my defined goals.
-                          <br><br>
-                          Key Findings:
-                      </p>
-                      <p>
-                      <ul>
-                            <li>All interviewees found cooking to be a chore and preferred if it required minimal effort.</li>
-                            <li>Even though interviewees cook everyday, they don't necessarly enjoy it.</li>
-                            <li>Interviewees want a good system to save recipes.</li>
-                            <li>Recipes that include ingredient substitutions would be useful.</li>
-                            <li>Having a feature that readjusts the required ingredients based on the inputted serving size will be helpful.</li>
-                            <li>Access to nutritionists would be helpful when they have questions about selecting the right food to promote a healthy lifestyle.</li>
-                      </ul>
-                      </p>
-                      <picture>
-                        <img src="img/lets cook/lets_cook-interviewinfo@2x.jpg" alt="Interview Info">
-                      </picture>
-
-                      <h2>Personas</h2>
-                      <picture>
-                        <img src="img/lets cook/lets_cook-persona@2x.jpg" alt="Personas">
-                      </picture>
-                </div>
-
-                <div>
-                      <h1>Ideation</h1>
-                </div>
-                <div>
-                      <h2>User Journey</h2>
-                      <p>
-                          To understand exactly what users want to accomplish and how they carry out a set of tasks, I created a mental model. I looked at one of my
-                          personas, James, and determined what types of motivation might be driving his behavior. Then, I went on to create a user journey map and user
-                          flow to visualize how James will interact with the app.
-                      </p>
-                      <pictures>
-                        <img src="img/lets cook/lets_cook-journeymap@2x.jpg" alt="User Journey">
-                      </picture>
-
-                      <h2>sitemap</h2>
-                      <p>
-                          With user journey and user flow, I was able to determine my app screens and design a sitemap. To better design the information architecture of Let's Cook!,
-                          I conducted a closed card sorting test using Optimal Workshop, where 7 participants completed the study.
-                      </p>
-                      <picture>
-                          <img src="img/lets cook/lets_cook-sitemap@2x.jpg" alt="Sitemap">
-                      </picture>
-
-                      <h2>Sketches</h2>
-                      <p>
-                          Next, I designed low-fidelity wireframes to help me flesh out interaction ideas. These screens were chosen to illustrate the navigational components of my app
-                          and get an overall idea of how my design will be laid out.
-                          <br><br>
-                          This process was quick to create and easy to modify, and it allowed more room for creativity without having to worry about the small details.
-                      </p>
-                      <picture>
-                        <img src="img/lets cook/lets_cook-sketches@2x.jpg" alt="Sketches">
-                      </picture>
-
-                      <h2>Mid-Fidelity</h2>
-                      <p>
-                          Once I had the general concept down on paper, I was able to translate my sketches into mid-fidelity wireframes to convey form, function, and specific UI. These
-                          wireframes were created using Adobe XD.
-                      </p>
-                      <picture>
-                        <img src="img/lets cook/lets_cook-midfidelity@2x.jpg" alt="Mid-Fidelity Wireframes">
-                      </picture>
-                </div>
-
-                <div>
-                      <h1>Design</h1>
-                </div>
-                <div>
-                      <h2>Prototype</h2>
-                      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FJQKjw5jKV3yGA28MU7FVyl%2FLet-s-Cook%3Fpage-id%3D0%253A1%26node-id%3D12%253A437%26viewport%3D119%252C-55%252C0.08858361095190048%26scaling%3Dscale-down" allowfullscreen></iframe>
-
-                      <h2>Search for Recipe</h2>
-                      <p>
-                          To create a seamless experience for users to explore recipes, I designed each screen to have a search bar so users can easily and quickly do searches no matter
-                          what screen they are on. A filter function is also available to help users refine their searches.
-                      </p>
-
-                      <h2>Search for Experts</h2>
-                      <p>
-                          One of the primary features of Let's Cook! is the ability for users to connect with experts, like nutritionists, dieticians, chefs, to talk about lifestyle changes -
-                          what to eat or not to eat when on a certain diet, what nutrients are important to include, etc. Users can message these experts with their questions, or for more extensive
-                          and consistent guidance, they are ablet o book video/audio calls with their experts.
-                      </p>
-
-                      <h2>Create Meal Plans</h2>
-                      <p>
-                          A lot of times, users have busy schedules and don't always have time to figure out what to cook or how longi t would take to prepare meals. I wanted to give them the ability
-                          to create meal plans so that they can plan ahead of time what they will be cooking, what ingredients they need, and how long it would take them to prepare the meals.
-                          Additionally, it also enables those who want to improve their health and those who want to meet their weight goals to stick to well-balanced meals and take control of their
-                          nutritional needs.
-                      </p>
-
-                      <h2>Add Ingredients to Shopping List</h2>
-                      <p>
-                          "What ingredients do I need again." "Did I buy this yet?" "Where can I buy these ingredients?" These are questions users no longer have to ask as they are now able to add all
-                          the ingredients on the recipe onto their shopping list and be linked to specific stores where they can buy those ingredients when they are ready to order them.
-                      </p>
-
-                      <h2>Typography</h2>
-                      <p>
-                          Let's Cook! uses three typefaces - Baumans, Be Vietnam, and Roboto. However, Be Vietnam is the primary typography of teh app. Baumans was used for the logo to keep it fun and
-                          inviting, and Roboto was used for button texts.
-                      </p>
-                      <picture>
-                        <img src="img/lets cook/lets_cook-typography@2x.jpg" alt="Typography">
-                      </picture>
-
-                      <h2>Colors</h2>
-                      <p>
-                          The two main colors for this app are white and orange-red. A white background was used to allow the orange-red to pop. The primary text color is black. When a text is clickable
-                          or selected, its color will be orange-red. Accent colors were used for illustrations on the onboarding screens. Orange was used because of its association with joy, happiness,
-                          and hunger.
-                      </p>
-                      <picture>
-                        <img src="img/lets cook/lets_cook-colors@2x.jpg" alt="Colors">
-                      </picture>
-
-                      <h2>Accessibility</h2>
-                      <p>
-                          Let's Cook! will adhere to standard guidelines for accessibility.
-                      </p>
-                      <p>
-                      <ul>
-                            <li>Careful color selection and high contrast to improve visibility</li>
-                            <li>Offer transcriptions for audio resources and captions/subtitles for videos</li>
-                            <li>Use simpler language for contents so all users can easily understand</li>
-                            <li>Highlight or emphasize important information using different font weight and sizes</li>
-                            <li>Keep navigational elements in the same order on each screen</li>
-                      </ul>
-                      </p>
-                      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FJQKjw5jKV3yGA28MU7FVyl%2FLet-s-Cook%3Fpage-id%3D0%253A1%26node-id%3D12%253A437%26viewport%3D119%252C-55%252C0.08858361095190048%26scaling%3Dscale-down" allowfullscreen></iframe>
-                </div>
-
-                <div>
-                      <h2>Takeaways</h2>
-                      <p>
-                          As a person who often looks for new ways to improve my diet and loves cooking, workong on Let's Cook! was really eye-opening and fun. I discovered the importance of
-                          having access to nutritionists and the convenience of linking specific store to the app for ingredients purchase. I also had the opportunity to explore more features
-                          on Figma that allowed me to create and improve my design process for Let's Cook! In the future, I would want to conduct surveys and interviews with a more diverse
-                          pool of people to gather a wider range of experiences and perspectives.
-                      </p>
-                </div>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <!-- For Contact Me section -->
-      <div>
-            <footer id="contact">
-            <h2>Get in Touch</h2>
-            <p>
-                Do you like my work and want to discuss opportunities? Please get in touch.
-                Call: <a href="tel:7326379586">(732) 637-9586</a> or Skype me at
-                <a href="skype:grcchai">grcchai</a>. Prefer sending an email?
-            </p>
-            <div>
-                  <a href="mailto:grace.chai@gmail.com" class="button contact">Email Me</a>
-            </div>
-            <div>
-                  <a href="LINKEDIN-URL" target="_blank">
-                  <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <g id="g5891">
-                  <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;" />
-                  <g id="shapes">
-                  <rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667" />
-                  <path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0"
-                  style="fill:#fff;fill-rule:nonzero;" />
-                  <path
-                  d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
-                  id="path15" style="fill:#fff;fill-rule:nonzero;" />
-                  </g>
-                  </g>
-                  </svg>
-                  </a>
-
-                  <a href="TWITTER-URL" target="_blank">
-                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
-                  <g>
-                  <rect x="0" y="0" style="fill:#50ABF1;" width="455.731" height="455.731" />
-                  <path style="fill:#FFFFFF;" d="M60.377,337.822c30.33,19.236,66.308,30.368,104.875,30.368c108.349,0,196.18-87.841,196.18-196.18
+                            <a href="TWITTER-URL" target="_blank">
+                                <svg
+                                    version="1.1"
+                                    id="Capa_1"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px"
+                                    y="0px"
+                                    viewBox="0 0 455.731 455.731"
+                                    style="enable-background: new 0 0 455.731 455.731;"
+                                    xml:space="preserve"
+                                >
+                                    <g>
+                                        <rect x="0" y="0" style="fill: #50abf1;" width="455.731" height="455.731" />
+                                        <path
+                                            style="fill: #ffffff;"
+                                            d="M60.377,337.822c30.33,19.236,66.308,30.368,104.875,30.368c108.349,0,196.18-87.841,196.18-196.18
                   c0-2.705-0.057-5.39-0.161-8.067c3.919-3.084,28.157-22.511,34.098-35c0,0-19.683,8.18-38.947,10.107
                   c-0.038,0-0.085,0.009-0.123,0.009c0,0,0.038-0.019,0.104-0.066c1.775-1.186,26.591-18.079,29.951-38.207
                   c0,0-13.922,7.431-33.415,13.932c-3.227,1.072-6.605,2.126-10.088,3.103c-12.565-13.41-30.425-21.78-50.25-21.78
                   c-38.027,0-68.841,30.805-68.841,68.803c0,5.362,0.617,10.581,1.784,15.592c-5.314-0.218-86.237-4.755-141.289-71.423
                   c0,0-32.902,44.917,19.607,91.105c0,0-15.962-0.636-29.733-8.864c0,0-5.058,54.416,54.407,68.329c0,0-11.701,4.432-30.368,1.272
-                  c0,0,10.439,43.968,63.271,48.077c0,0-41.777,37.74-101.081,28.885L60.377,337.822z" />
-                  </g>
-                  </svg>
-                  </a>
+                  c0,0,10.439,43.968,63.271,48.077c0,0-41.777,37.74-101.081,28.885L60.377,337.822z"
+                                        />
+                                    </g>
+                                </svg>
+                            </a>
 
-                  <a href="INSTAGRAM-URL" target="_blank">
-                  <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <defs>
-                  <style>
-                    .cls-1 {
-                      fill: url(#radial-gradient);
-                    }
+                            <a href="INSTAGRAM-URL" target="_blank">
+                                <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: url(#radial-gradient);
+                                            }
 
-                    .cls-2 {
-                      fill: #fff;
-                    }
-                  </style>
-                  <radialGradient cx="-578.95" cy="-837.6" gradientTransform="translate(499.5 629.5) scale(0.75)" gradientUnits="userSpaceOnUse" id="radial-gradient" r="197.06">
-                    <stop offset="0" stop-color="#f9ed32" />
-                    <stop offset="0.36" stop-color="#ee2a7b" />
-                    <stop offset="0.44" stop-color="#d22a8a" />
-                    <stop offset="0.6" stop-color="#8b2ab2" />
-                    <stop offset="0.83" stop-color="#1b2af0" />
-                    <stop offset="0.88" stop-color="#002aff" />
-                  </radialGradient>
-                  </defs>
-                  <title />
-                  <g data-name="3-instagram" id="_3-instagram">
-                  <rect class="cls-1" height="64" rx="11.2" ry="11.2" transform="translate(64 64) rotate(180)" width="64" />
-                  <path class="cls-2" d="M44,56H20A12,12,0,0,1,8,44V20A12,12,0,0,1,20,8H44A12,12,0,0,1,56,20V44A12,12,0,0,1,44,56ZM20,12.8A7.21,7.21,0,0,0,12.8,20V44A7.21,7.21,0,0,0,20,51.2H44A7.21,7.21,0,0,0,51.2,44V20A7.21,7.21,0,0,0,44,12.8Z" />
-                  <path class="cls-2" d="M32,45.6A13.6,13.6,0,1,1,45.6,32,13.61,13.61,0,0,1,32,45.6Zm0-22.4A8.8,8.8,0,1,0,40.8,32,8.81,8.81,0,0,0,32,23.2Z" />
-                  <circle class="cls-2" cx="45.6" cy="19.2" r="2.4" />
-                  </g>
-                  </svg>
-                  </a>
-          </div>
-          <div>
-                <p>Copyright Grace Chai 2021</p>
-          </div>
-        </footer>
-      </div>
-    </div>
-  </div>
-</body>
+                                            .cls-2 {
+                                                fill: #fff;
+                                            }
+                                        </style>
+                                        <radialGradient cx="-578.95" cy="-837.6" gradientTransform="translate(499.5 629.5) scale(0.75)" gradientUnits="userSpaceOnUse" id="radial-gradient" r="197.06">
+                                            <stop offset="0" stop-color="#f9ed32" />
+                                            <stop offset="0.36" stop-color="#ee2a7b" />
+                                            <stop offset="0.44" stop-color="#d22a8a" />
+                                            <stop offset="0.6" stop-color="#8b2ab2" />
+                                            <stop offset="0.83" stop-color="#1b2af0" />
+                                            <stop offset="0.88" stop-color="#002aff" />
+                                        </radialGradient>
+                                    </defs>
+                                    <title />
+                                    <g data-name="3-instagram" id="_3-instagram">
+                                        <rect class="cls-1" height="64" rx="11.2" ry="11.2" transform="translate(64 64) rotate(180)" width="64" />
+                                        <path
+                                            class="cls-2"
+                                            d="M44,56H20A12,12,0,0,1,8,44V20A12,12,0,0,1,20,8H44A12,12,0,0,1,56,20V44A12,12,0,0,1,44,56ZM20,12.8A7.21,7.21,0,0,0,12.8,20V44A7.21,7.21,0,0,0,20,51.2H44A7.21,7.21,0,0,0,51.2,44V20A7.21,7.21,0,0,0,44,12.8Z"
+                                        />
+                                        <path class="cls-2" d="M32,45.6A13.6,13.6,0,1,1,45.6,32,13.61,13.61,0,0,1,32,45.6Zm0-22.4A8.8,8.8,0,1,0,40.8,32,8.81,8.81,0,0,0,32,23.2Z" />
+                                        <circle class="cls-2" cx="45.6" cy="19.2" r="2.4" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <p>Copyright Grace Chai 2021</p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
