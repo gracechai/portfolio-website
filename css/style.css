@@ -14,6 +14,7 @@ body {
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 1.6;
+  text-align: center;
 	color: #000000
 }
 
@@ -49,29 +50,57 @@ img {
 }
 
 a {
-	color: #7C90A1;
+	color: #384754;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #7C90A1;
+	color: #D4D4D4;
 }
 
 a:hover,
 a:focus {
-	color: #D4D4D4;
+	color: #F5F5F5;
 	text-decoration: underline;
 }
 
 a:active {
-	color: #8C806C;
+	color: #F5F5F5;
 }
 
 header {
-	background-color: #F5F5F5;
-	padding: 10px;
-	margin: 10px;
-	border-bottom: 3px solid #8C806C;
+	background-color: #7C90A1;
+  text-align: center;
+	padding: 10px 0;
+	margin: 0px;
+  box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
+  position: fixed;
+  width: 100%;
+}
+
+main{
+  padding-top: 200px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li{
+  display: inline-block;
+}
+
+nav > ul > li > a:visited{
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #F5F5F5;
+}
+
+nav{
+  display: inline-block;
+  width: 100%;
 }
 
 selector {
@@ -104,4 +133,49 @@ selector {
 .button.contact:hover {
 	background-color: #7C90A1;
 	color: #ffffff;
+}
+
+/* Layout Styling */
+
+.container{
+  padding: 0 5px;
+}
+
+.row1{
+  margin: 0px 0;
+}
+
+.row{
+  margin: 50px 0;
+}
+
+#work .row{ padding-bottom: 25px; broder-bottom: 1px solid #8C806C; }
+
+#hero h1{
+  text-align: center;
+}
+
+.logo{
+  max-width: 150px;
+}
+
+#hero{
+  background-color: #F5F5F5;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#contact{
+  background-color: #F5F5F5;
+  width: 100%;
+  display: inline-block;
+}
+
+.thumnbnail{
+  max-wdith: 250px;
+}
+
+.socialmediaicon{
+  max-width: 50px;
 }
