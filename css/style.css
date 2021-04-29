@@ -82,6 +82,11 @@ main{
   padding-top: 200px;
 }
 
+nav{
+  display: inline-block;
+  width: 100%;
+}
+
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -96,11 +101,6 @@ nav > ul > li > a:visited{
   text-transform: uppercase;
   font-weight: 700;
   color: #F5F5F5;
-}
-
-nav{
-  display: inline-block;
-  width: 100%;
 }
 
 selector {
@@ -141,6 +141,10 @@ selector {
   padding: 0 5px;
 }
 
+.container1{
+    padding: 20 5px;
+}
+
 .row1{
   margin: 0px 0;
 }
@@ -172,10 +176,35 @@ selector {
   display: inline-block;
 }
 
+#about h1{
+  padding: 50px 0;
+  width: 100%;
+}
+
+.cover{
+  width: 350px;
+  hieght: 200px;
+  padding: 35px 0px 0px 0px;
+}
+
 .thumnbnail{
   max-wdith: 250px;
 }
 
-.socialmediaicon{
-  max-width: 50px;
+.icon{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  padding: 30px 0px 0px 0px;
+}
+
+.profilepic{
+  width: 200px;
+  height: 270px;
+  padding: 100px 0px 10px 0px;
+}
+
+ul{
+  list-style-position: inside;
+  text-algin: center;
 }
