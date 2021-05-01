@@ -116,7 +116,7 @@ selector {
 	padding: 10px;
 	border-radius: 3px;
 	border-bottom: 2px solid #8C806C;
-	transition: : 0.2 opacity;
+	transition: 0.2 opacity;
 }
 
 .button:hover {
