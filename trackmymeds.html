@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Let's Cook!</title>
+        <link href="img/favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/dd7913f68c.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+    <body id="home">
+        <header>
+            <div class="container">
+              <div class="navtoggle" id="myNavtoggle">
+                <img src="img/logo.png" class="logo" alt="Grace Chai" />
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="menuicon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+              </div>
+            </div>
+        </header>
+
+        <div>
+            <div>
+                <main>
+                    <div>
+                        <div>
+                            <picture>
+                                <img src="img/trackmymeds/track_my_meds-coverimage@2x.jpg" class="cover" alt="Track My Meds Cover Image" />
+                            </picture>
+                            <div>
+                                <div>
+                                    <h2>Overview</h2>
+                                    <p>
+                                        Working in the pharmacy, I noticed two types of people - those who are eager to pick up their medications and those who do not even realize they have medications ready for pickup. When patients wait
+                                        around the pharmacy or constantly call the pharmacy to see if their medications have been filled, pharmacy staff becomes stressed and overwhelmed. When pharmacy staff calls patients to remind them to
+                                        pick up their medications that's been sitting in the pharmacy for ten days or it will go back on the shelves, patients become frustrated. So I decided to challenge myself to design a solution that would
+                                        effectively bridge the communication gap between the pharmacy and patients.
+                                    </p>
+                                    <br />
+                                    <br />
+                                    <h2>The Challenge</h2>
+                                    <p>
+                                        Design a mobile medication tracker for a pharmacy app that allows patients to track the status of their medication after their prescription has been received by the pharmacy or a prescription refill
+                                        request has been submitted.
+                                    </p>
+                                    <br />
+                                    <br />
+                                    <picture>
+                                        <img src="img/trackmymeds/track_my_meds-onboardingmockups@2x.jpg" alt="Onboarding Screens" />
+                                    </picture>
+                                    <br />
+                                    <p>
+                                        I began the challenge by defining user goals and the tasks that users might do.
+                                      </p>
+
+                                    <div class="row">
+                                        <div class="column col-md-6 col-lg-7">
+                                            <div class="desc">
+                                                <h2>User Goals</h2>
+
+                                                <ul>
+                                                  <li>Utilize the pharmacy app more</li>
+                                                  <li>Know the status of their prescription</li>
+                                                  <li>Pick up their medication</li>
+                                                  <li>Cancel a filled prescription</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="column col-md-6 col-lg-5">
+                                            <div class="desc">
+                                                <h2>User Tasks</h2>
+                                                <ul>
+                                                  <li>Search for medication using prescription number or by scanning barcode on previous medication bottle.</li>
+                                                  <li>Use tracker to see the status of their medication and know when to pick up their medication or cancel the medication if they no longer need it.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <h1>Discover</h1>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            To help me understand a bit more about my users, I noted how patients might feel at the time in which they would use this feature of the app.<br><br>
+                                            Patients are...
+                                        </p>
+                                        <ul>
+                                            <li>Eager to get their medication because they were just discharged from the hospital or they just had a proecdure done</li>
+                                            <li>Not in a hurry</li>
+                                            <li>Unaware of autofilled medications that are ready for pick up</li>
+                                            <li>Tech savvy</li>
+                                            <li>Trying to be efficient with their time</li>
+                                        </ul>
+                                    <div class="row">
+                                        <p>
+                                            Next, I listed some of the priorities and pain points patients have based on my observations from the day-to-day encounter and interactions I have with them.
+                                        </p>
+                                    </div>
+                                        <div class="row">
+                                          <div class="column col-md-6 col-lg-7">
+                                            <div class="desc">
+                                              <picture>
+                                                  <img src="img/trackmymeds/trackmymeds-priorities@2x.png" alt="Priorities" />
+                                              </picture>
+                                            </div>
+                                          </div>
+                                          <div class="column col-md-6 col-lg-5">
+                                              <div class="desc">
+                                                <h2>User Priorities</h2>
+                                                <ul>
+                                                    <li>Drop off their prescription, submit a refill request, or have their doctor call or fax in their prescription</li>
+                                                    <li>Track the status of their medication</li>
+                                                    <li>Be notified when their medication is ready for pick up or out of stock</li>
+                                                    <li>A way to cancel their prescription if they don't need the filled medication</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="row">
+                                            <div class="column col-md-6 col-lg-7">
+                                              <div class="desc">
+                                                <h2>User Pain Points</h2>
+                                                <ul>
+                                                    <li>Unaware of the status of their medication</li>
+                                                    <li>Having to keep calling the pharmacy to find out if their medication is ready</li>
+                                                    <li>Unaware they have medications ready for pick up</li>
+                                                    <li>Coming into the pharmacy to pick up their medication only to find out that it's not ready, out of stock, or their doctor never got around to calling in their prescription</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                            <div class="column col-md-6 col-lg-5">
+                                                <div class="desc">
+                                                  <picture>
+                                                      <img src="img/trackmymeds/trackmymeds-painpoints@2x.png" alt="Pain Points" />
+                                                  </picture>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                        <div class="row">
+                                            <h2>User Stories</h2>
+                                            <p>
+                                                Once I have identified user goals, priorities, and pain points, I was able to create two user stories to help me further empathize with my target users.
+                                            </p>
+                                        </div>
+
+                                        <picture>
+                                            <img src="img/trackmymeds/track_my_meds-storyboard@2x.jpg" alt="Storyboard" />
+                                        </picture>
+
+                                        <div class="row">
+                                          <div class="column col-md-6 col-lg-7">
+                                            <div class="desc">
+                                              <p>
+                                                  When having my prescription filled, I want to quickly see the status of my medication so I know when to come into the pharmacy to pick it up.
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div class="column col-md-6 col-lg-5">
+                                              <div class="desc">
+                                                <p>
+                                                  When my prescription is being autofilled, I want to be notified prior so that I can indicate whether or not I want it filled.
+                                                </p>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="row">
+                                              <h1>Ideation</h1>
+                                          </div>
+
+                                          <div class="row">
+                                            <div class="column col-md-6 col-lg-7">
+                                              <div class="desc">
+                                                <h2>User Journey</h2>
+                                                <p>
+                                                    Then I created a user journey to show user behavior and the way in which they would interact with the tracker feature of the app.
+                                                </p>
+                                                <ol type="1">
+                                                    <li>Patient leaves to run errands</li>
+                                                    <li>Pulls out their phone</li>
+                                                    <li>Enters their prescription number</li>
+                                                    <li>Views the medication tracker</li>
+                                                    <li>Sees that their medication is out of stock</li>
+                                                    <li>Patient goes home</li>
+                                                    <li>Patient checks the app again the following day</li>
+                                                    <li>Sees that their medication is filled</li>
+                                                    <li>Returns to the pharmacy</li>
+                                                    <li>Picks up their medication</li>
+                                                </ol>
+                                              </div>
+                                            </div>
+                                            <div class="column col-md-6 col-lg-5">
+                                                <div class="desc">
+                                                  <picture>
+                                                      <img src="img/trackmymeds/trackmymeds-userjourney@2x.png" alt="User Journey" />
+                                                  </picture>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="row">
+                                              <div class="column col-md-6 col-lg-7">
+                                                <div class="desc">
+                                                  <picture>
+                                                      <img src="img/trackmymeds/track_my_meds-userflow@2x.jpg" alt="User Flow" />
+                                                  </picture>
+                                                </div>
+                                              </div>
+                                              <div class="column col-md-6 col-lg-5">
+                                                  <div class="desc">
+                                                    <h2>Requirements and User Flow</h2>
+                                                    <p>
+                                                        I also considered some of the general requirements needed for the tracker feature based on user goals and needs, and then created a user flow for it.
+                                                    </p>
+                                                    <ul>
+                                                        <li>Easy to search/input field</li>
+                                                        <li>Provide accurate information and timely updates</li>
+                                                        <li>See where in the workflow the medication is in</li>
+                                                        <li>Opt in for push notifications when medications are filled and ready for pick up, or receive general status updates</li>
+                                                        <li>Only need prescription number, barcode from previous medication bottle, or medication name</li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="row">
+                                                <div class="column col-md-6 col-lg-7">
+                                                  <div class="desc">
+                                                    <h2>Assumptions</h2>
+                                                    <p>
+                                                        Next, I listed some of the assumptions I made for this design challenge.
+                                                    </p>
+                                                    <ul>
+                                                        <li>Patients have access to the pharmacy app</li>
+                                                        <li>Pharmacy's computer updates status of medication at each workflow (i.e. data entry, data verfication, fill, product verification, will call/ready for pick up)</li>
+                                                        <li>Patients have their prescription number and medication name readily available</li>
+                                                        <li>Patient is picking up their medication for the first time</li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                                <div class="column col-md-6 col-lg-5">
+                                                    <div class="desc">
+                                                      <picture>
+                                                          <img src="img/trackmymeds/trackmymeds-assumption@2x.png" alt="Assumptions" />
+                                                      </picture>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="row">
+                                                  <div class="column col-md-6 col-lg-7">
+                                                    <div class="desc">
+                                                      <picture>
+                                                          <img src="img/trackmymeds/trackmymeds-designconstraints@2x.png" alt="Design Constraints" />
+                                                      </picture>
+                                                    </div>
+                                                  </div>
+                                                  <div class="column col-md-6 col-lg-5">
+                                                      <div class="desc">
+                                                        <h2>Design Constraints</h2>
+                                                        <p>
+                                                            To make sure the focus is on achieving the goal of enabling patients to track the status of their medication so they know when to pick it up, the following constraints were introduced.
+                                                        </p>
+                                                        <ul>
+                                                            <li>Sign up/Login not required</li>
+                                                            <li>Patient will only be able to track one medication at a time</li>
+                                                            <li>Only medication pick up and cancellation options</li>
+                                                        </ul>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <h1>Design</h1>
+                                </div>
+
+                                <div>
+                                    <h2>Sketches</h2>
+                                    <picture>
+                                        <img src="img/trackmymeds/track_my_meds-sketches@2x.jpg" alt="Sketches" />
+                                    </picture>
+                                    <br />
+                                    <br />
+                                    <h2>Sketche translated into wireframes on Figma</h2>
+                                    <picture>
+                                        <img src="img/trackmymeds/track_my_meds-midfidelitywireframes@2x.jpg" alt="Midfidelity Wireframes" />
+                                    </picture>
+
+
+                                <div>
+                                    <h1>Prototype</h1>
+                                </div>
+
+                                    <iframe
+                                        style="border: 1px solid rgba(0, 0, 0, 0.1);"
+                                        width="800"
+                                        height="450"
+                                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F95PFPLLGqXdbSJmKHjaMlF%2FDesign-Challenge%3Fpage-id%3D0%253A1%26node-id%3D109%253A279%26viewport%3D-43%252C70%252C0.09621573984622955%26scaling%3Dscale-down"                                       class="prototype"
+                                    >
+                                    </iframe>
+                                </div>
+
+                                <div class="row">
+                                    <div class="projectDesc">
+                                        <h2>Takeaways</h2>
+                                        <p>
+                                            Designing this feature as a design challenge for myself was a good learning experience. It was certainly nerve-wracking trying to come up with requirements, assumptions, and constraints in such a short period of time to make sure the focus
+                                            is on one specific task. What I realized as I was working through this challenge was that I can get a bit too caught up with the little details of things, which makes it easy to miss the bigger picture. In the future, I hope to incorporate
+                                            more research into the process as I believe it will better guide me in my design decision and solution.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <!-- For Contact Me section -->
+                <div>
+                    <footer id="contact">
+                        <h2>Get in Touch</h2>
+                        <p>Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:7326379586">(732) 637-9586</a> or Skype me at <a href="skype:grcchai">grcchai</a>. Prefer sending an email?</p>
+                        <div>
+                            <a href="mailto:grace.chai@gmail.com" class="button contact">Email Me</a>
+                        </div>
+                        <div>
+                            <a href="LINKEDIN-URL" class="icon" target="_blank">
+                                <svg
+                                    height="100%"
+                                    style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;"
+                                    version="1.1"
+                                    viewBox="0 0 512 512"
+                                    width="100%"
+                                    xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                >
+                                    <g id="g5891">
+                                        <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill: #2867b2;" />
+                                        <g id="shapes">
+                                            <rect height="257.962" id="rect11" style="fill: #fff;" width="85.76" x="61.053" y="178.667" />
+                                            <path
+                                                d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z"
+                                                id="path13-0"
+                                                style="fill: #fff; fill-rule: nonzero;"
+                                            />
+                                            <path
+                                                d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
+                                                id="path15"
+                                                style="fill: #fff; fill-rule: nonzero;"
+                                            />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <p>Copyright Grace Chai 2021</p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
